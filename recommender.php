@@ -15,11 +15,12 @@
 
     $mysqli->set_charset('utf-8');
 
-    $sql = "SELECT songs.song_name, artists.artist_name FROM songs
-    JOIN artists 
-    ON songs.artist_id = artists.artist_id;";
+    $sql = "SELECT songs.song_id, songs.song_name, artists.artist_name, genres.genre_name FROM songs
+        JOIN artists 
+            ON songs.artist_id = artists.artist_id
+        JOIN genres
+            ON songs.genre_id = genres.genre_id;";
 
-    echo $sql;
 
     $results = $mysqli->query($sql);
 
@@ -71,23 +72,6 @@
       <button type="submit" class="btn btn-primary btn-block" style="background-color: #800000;">Submit</button>
     </form>
 
-    <form>
-        <h1> Recommend Book </h1>
-      <div class="form-group col-12" >
-        <label for="book_name">Book name</label>
-        <input type="book_name" class="form-control" id="book_name" aria-describedby="emailHelp" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
-      </div>
-
-     
-      <div class="form-group col-12">
-        <label for="book_author">Book author</label>
-        <textarea class="form-control" id="book_author" rows="3"></textarea>
-      </div>
-
-      <button type="submit" class="btn btn-primary btn-block" style="background-color: #800000;">Submit</button>
-    </form>
-
     <h1>Recommendations for songs: </h1>
 
     <div class="container-fluid">
@@ -96,8 +80,12 @@
                 <table class="table table-hover table-responsive mt-4">
                     <thead>
                         <tr>
+                            <th></th>
+                            
                             <th>Song Name</th>
                             <th>Artist Name</th>
+                            <th>Genre</th>
+                            <th></th>
                            <!--  <th>Release Date</th> -->
                         </tr>
                     </thead>
@@ -106,8 +94,20 @@
                         <?php while($row = $results->fetch_assoc() ) :?>
                             <tr>
 <!--                                 <td><a href="details.php?dvd_title_id=<?php echo $row['dvd_title_id'];?>"><?php echo $row['title']; ?></a></td> -->
+                                <td>
+                                    <a href="delete.php?song_id=<?php echo $row['song_id'];?>" class="btn btn-outline-danger" 
+                                        onclick="return confirm('You are about to delete song <?php echo $row['song_name']; ?>. Are you sure?') ">
+                                        Delete
+                                    </a>
+                                </td>
                                 <td><?php echo $row['song_name']; ?></td>
                                 <td><?php echo $row['artist_name']; ?></td>
+                                <td><?php echo $row['genre_name']; ?></td>
+                                <td>
+                                    <a href="update.php?song_id=<?php echo $row['song_id'];?>" class="btn btn-secondary" >
+                                        Update
+                                    </a>
+                                </td>
                             </tr>
                         <?php endwhile; ?>
                     </tbody>
