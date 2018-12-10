@@ -7,16 +7,18 @@
     <title>Include, Require</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="lightbox2-master/dist/css/lightbox.min.css">
 </head>
 <body>
     <?php require 'nav.html'; ?>
- 
+
     <div class="container mt-4 mb-3">
         <div class="row">
             <h1 class="col-12">Intro</h1>
             <p class="col-12">Engineering student turned professional. My passion lies in pursuing bold ideas, supporting disruptive technology, and helping others.</p>
  
-            <img src="https://media.licdn.com/dms/image/C5603AQGaOZm026O28w/profile-displayphoto-shrink_200_200/0?e=1548892800&v=beta&t=Hghr1NPuB0d5KvgmY5dLf8FLqP1jtcMoPLn7k_GC5mg" class="rounded float-left" alt="Responsive image">
+
+            <a class="example-image-link" href="https://media.licdn.com/dms/image/C5603AQGaOZm026O28w/profile-displayphoto-shrink_200_200/0?e=1548892800&v=beta&t=Hghr1NPuB0d5KvgmY5dLf8FLqP1jtcMoPLn7k_GC5mg" data-lightbox="example-1"><img class="example-image" src="https://media.licdn.com/dms/image/C5603AQGaOZm026O28w/profile-displayphoto-shrink_200_200/0?e=1548892800&v=beta&t=Hghr1NPuB0d5KvgmY5dLf8FLqP1jtcMoPLn7k_GC5mg" alt="image-1" /></a>
  
             <h2 class="col-12">Donec in commodo</h2>
             <p class="col-12">Donec in commodo libero. Etiam et congue dolor. Etiam quis aliquam lectus. Phasellus lacinia metus eget ipsum aliquam, nec vulputate nulla venenatis. Praesent eget augue fermentum, ultrices nisi at, suscipit augue. Phasellus orci diam, dictum quis maximus et, blandit a odio. Aenean metus felis, dictum et metus sollicitudin, rhoncus facilisis odio. Donec sagittis tincidunt velit et porttitor. Nulla tempus mi ipsum, vel porttitor dolor vulputate in. Nulla consectetur hendrerit auctor.</p>
@@ -36,6 +38,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="lightbox2-master/dist/js/lightbox-plus-jquery.min.js"></script>
      
 </body>
 </html>
