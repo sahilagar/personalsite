@@ -70,7 +70,6 @@
                             <th>Song Name</th>
                             <th>Artist Name</th>
                             <th>Genre</th>
-                            <th></th>
                            <!--  <th>Release Date</th> -->
                         </tr>
                     </thead>
@@ -88,11 +87,11 @@
                                 <td><?php echo $row['song_name']; ?></td>
                                 <td><?php echo $row['artist_name']; ?></td>
                                 <td><?php echo $row['genre_name']; ?></td>
-                                <td>
+                               <!--  <td>
                                     <a href="update.php?song_id=<?php echo $row['song_id'];?>" class="btn btn-secondary" >
                                         Update
                                     </a>
-                                </td>
+                                </td> -->
                             </tr>
                         <?php endwhile; ?>
                     </tbody>

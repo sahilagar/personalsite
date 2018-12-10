@@ -57,9 +57,6 @@ if(isset($_POST['submit'])){
       }
     }
 </script>    
-
-
-    </script>
 </head>
 <body>
     <?php require 'nav.html'; ?>
