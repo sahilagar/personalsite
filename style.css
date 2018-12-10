@@ -1,0 +1,7 @@
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+            color: #FFF;
+}
+footer div {
+    line-height: 50px;
+    font-size: 0.9em;
+}

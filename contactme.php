@@ -29,20 +29,42 @@ if(isset($_POST['submit'])){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Include, Require</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <style>
-        .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
-            color: #FFF;
-        }
-        footer div {
-            line-height: 50px;
-            font-size: 0.9em;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+    function validateForm() {
+      var x = document.forms["myForm"]["first_name"].value;
+      if (x == "") {
+        alert("First name must be filled out");
+        return false;
+      }
+
+      x = document.forms["myForm"]["last_name"].value;
+      if (x == "") {
+        alert("Last name must be filled out");
+        return false;
+      }
+
+      x = document.forms["myForm"]["email"].value;
+      if (x == "") {
+        alert("Email must be filled out");
+        return false;
+      }
+
+      x = document.forms["myForm"]["message"].value;
+      if (x == "") {
+        alert("message must be filled out");
+        return false;
+      }
+    }
+</script>    
+
+
+    </script>
 </head>
 <body>
     <?php require 'nav.html'; ?>
 
-    <form action="" method="post">
+    <form name = "myForm" action="" onsubmit="return validateForm()" method="post">
         <div class="form-group col-12">
             First Name: <input type="text" class="form-control" name="first_name"><br>
         </div>

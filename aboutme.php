@@ -6,15 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Include, Require</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <style>
-        .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
-            color: #FFF;
-        }
-        footer div {
-            line-height: 50px;
-            font-size: 0.9em;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <?php require 'nav.html'; ?>

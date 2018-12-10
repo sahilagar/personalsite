@@ -41,38 +41,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Include, Require</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <style>
-        .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
-            color: #FFF;
-        }
-        footer div {
-            line-height: 50px;
-            font-size: 0.9em;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <?php require 'nav.html'; ?>
  
-    <form>
-        <h1> Recommend Song </h1>
-      <div class="form-group col-12" >
-        <label for="song_name">Song name</label>
-        <input type="song_name" class="form-control" id="song_name" aria-describedby="emailHelp" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
-      </div>
+   
 
-     
-      <div class="form-group col-12">
-        <label for="song_artist">Song author</label>
-        <textarea class="form-control" id="song_artist" rows="3"></textarea>
-      </div>
-
-
-      <button type="submit" class="btn btn-primary btn-block" style="background-color: #800000;">Submit</button>
-    </form>
-
-    <h1>Recommendations for songs: </h1>
+    <h1>Recommendations:</h1>
 
     <div class="container-fluid">
         <div class="row">
@@ -115,6 +91,10 @@
             </div> <!-- .col -->
         </div> <!-- .row -->
     </div> <!-- .container-fluid -->
+
+     <form>
+      <a href="add_form.php" class="btn btn-primary btn-lg btn-block mt-4 mt-md-2" role="button" style="background-color: #800000;">Add a Song</a>
+    </form>
 
 
  
