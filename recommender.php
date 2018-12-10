@@ -42,12 +42,21 @@
     <title>Include, Require</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        window.onkeydown = function(event) {
+           if (event.keyCode === 13) {
+              alert("Kanye Omari West , is an American rapper, singer, songwriter, record producer, entrepreneur and fashion designer. His musical career has been marked by dramatic changes in styles, incorporating an eclectic range of influences from soul, baroque-pop, electro, indie rock, synth-pop, industrial and gospel. Over the course of his career, West has been responsible for cultural movements and progressions within mainstream hip hop and popular music at large.  \nSZA is an American singer and songwriter. Rowe was born in Saint Louis, Missouri, and later relocated to Maplewood, New Jersey.[1][5] In October 2012, SZA self-released her debut EP, See.SZA.Run, which she then followed up with her second EP, titled S, in April 2013. In July 2013, it was revealed that she had signed to the hip hop record label Top Dawg Entertainment, through which she released Z, her third EP and first retail release, in April 2014.\nAbel Makkonen Tesfaye (born 16 February 1990), better known by his stage name The Weeknd, is a Canadian singer, songwriter, and record producer. Tesfaye has helped broadened R&B's musical palette to incorporate indie and electronic styles; his work has been categorized with the alternative R&B tag."
+                );
+           }
+        };
+
+
+    </script>
 </head>
 <body>
     <?php require 'nav.html'; ?>
- 
-   
 
+    <p>Press enter to learn more about the artists </p>
     <h1>Recommendations:</h1>
 
     <div class="container-fluid">
